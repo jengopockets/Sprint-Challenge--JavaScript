@@ -92,9 +92,8 @@ console.log(contactInfo);
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-let uni = graduates.map(function(currentValue) {
-  if (currentValue.university >= "Uni")
-  return currentValue.university
+let uni = graduates.filter(function(currentValue) {
+ return currentValue.university.includes("Uni")
 });
 console.log(uni);
 
